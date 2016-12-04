@@ -1,7 +1,7 @@
 <?php
 
-include '../Includes/header.inc.php';
-require_once('../config.php'); 
+include '../Base/header.inc.php';
+require_once('config.php');
 
 ?>
 
@@ -11,7 +11,7 @@ require_once('../config.php');
 
 	<p style="margin-left: 85px"><b>Horse</b></p>
 
-	<img src="../Images/item1.img.jpeg" height="200px" width="180px" position="center" class="item1img" style="padding-left: 23px">
+	<img src="item1.img.jpeg" height="200px" width="180px" position="center" class="item1img" style="padding-left: 23px">
 
 	<script src="https://checkout.stripe.com/checkout.js"></script>
 
@@ -20,7 +20,6 @@ require_once('../config.php');
 	<script src="Item1.form.js"></script>
 
 </div>
- 
 
- <?php include '../Includes/footer.inc.php'; ?>
 
+ <?php include "../Base/footer.inc.php"; ?>

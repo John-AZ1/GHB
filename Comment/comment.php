@@ -4,8 +4,8 @@
 
 <?php
 
-include '../Includes/header.inc.php';
-include '../Includes/commentPrc.inc.php';
+include '../Base/header.inc.php';
+include 'commentPrc.inc.php';
 
 
 date_default_timezone_set('Australia/Sydney');
@@ -35,5 +35,5 @@ echo "<form name='commentsec' action='".setComments($conn)."' method='POST'>
 
 
 echo "<br/><br/><br/>";
-include '../Includes/footer.inc.php';
+include "../Base/footer.inc.php";
 ?>

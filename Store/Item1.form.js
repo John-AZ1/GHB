@@ -1,7 +1,7 @@
 
 var handler = StripeCheckout.configure({
   key: 'pk_test_2PSNAbLzRy3GtqJyLLZDQWLZ',
-  image: '../Images/favicon.ico',
+  image: '../Base/favicon.ico',
   locale: 'auto',
   token: function(token) {
     // You can access the token ID with `token.id`.

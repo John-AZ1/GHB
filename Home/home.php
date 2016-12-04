@@ -1,5 +1,5 @@
 <?php
-include "../Includes/header.inc.php";
+include "../Base/header.inc.php";
 ?>
 <br/><br/><br/>
 <h1>GHB</h1>
@@ -51,5 +51,5 @@ function move() {
 <br/><br/><br/><br/><br/><br/>
 
 <?php
-include "../Includes/footer.inc.php";
+include "../Base/footer.inc.php";
 ?>
