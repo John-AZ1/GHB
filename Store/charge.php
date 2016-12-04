@@ -10,7 +10,7 @@
       'source'  => $token
   ));
 
-  
+
 
   $charge = \Stripe\Charge::create(array(
       'customer' => $customer->id,
@@ -18,4 +18,4 @@
       'currency' => 'aud'
   ));
 
- header("Location: ".dirname(__FILE__)."/Pages/Store.php");
+ header("Location: ".dirname(__FILE__)."/Store/Store.php");

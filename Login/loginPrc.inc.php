@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'dhb.inc.php';
+include '../Base/dhb.inc.php';
 
 $lusername = $_POST['lusername'];
 $lpassword = $_POST['lpassword'];
