@@ -1,6 +1,6 @@
 <?php
 
-include 'dhb.inc.php';
+include '../Base/dhb.inc.php';
 
 function setComments($conn) {
 	if (isset($_POST['commentSubmit'])) {
@@ -9,7 +9,7 @@ function setComments($conn) {
 			$date = $_POST['date'];
 			$message = $_POST['message'];
 
-			$sql = "INSERT INTO comments (uid, date, message) 
+			$sql = "INSERT INTO comments (uid, date, message)
 			VALUES ('$uid', '$date', '$message')";
 
 			$result = mysqli_query($conn, $sql);
@@ -31,5 +31,5 @@ function getComments($conn) {
 			<p>".nl2br($row['message'])."</p><br/><br/>";
 		echo "</div>";
 
-	}	
+	}
 }

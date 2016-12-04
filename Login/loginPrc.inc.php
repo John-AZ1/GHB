@@ -14,7 +14,7 @@ $hash_pwd = $row['password'];
 $dehash = password_verify($lpassword, $hash_pwd);
 
 if ($dehash == 0) {
-	header("Location: ../Pages/login.php?error=userpassincorrect");
+	header("Location: login.php?error=userpassincorrect");
 	exit();
 } else {
 
@@ -24,6 +24,6 @@ $result = $conn->query($sql);
 	$_SESSION['id'] = $row['id'];
 	$_SESSION['firstname'] = $row['firstname'];
 	$_SESSION['lastname'] = $row['lastname'];
-	
-header("Location: ../Pages/login.php");
+
+header("Location: login.php");
 }

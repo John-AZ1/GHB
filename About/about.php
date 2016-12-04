@@ -1,8 +1,8 @@
 <?php
-	include "../Includes/header.inc.php"
+	include "../Base/header.inc.php";
 	?>
 	<br/><br/><br/>
 	<h1>About</h1>
 	<?php
-	include "../Includes/footer.inc.php"
+	include "../Base/footer.inc.php";
 ?>

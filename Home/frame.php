@@ -5,9 +5,9 @@ $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" href="../Includes/style.inc.css">
-<link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
-<script src="../Includes/script.inc.js"></script>
+<link rel="stylesheet" href="../Base/style.inc.css">
+<link rel="icon" type="image/x-icon" href="../Base/favicon.ico">
+<script src="../Base/script.inc.js"></script>
 <!--meta's-->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width"/>
@@ -15,7 +15,7 @@ $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 </head>
 <body>
 	<div class="inset">
-		<h2 class="pch2"> PICHANGE </h2> 
+		<h2 class="pch2"> PICHANGE </h2>
 
 		<img id="chgimg" src="../Images/img (1).jpg" alt=" Image Unavalible">
 			<br/>

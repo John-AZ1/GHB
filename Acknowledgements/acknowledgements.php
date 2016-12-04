@@ -1,5 +1,5 @@
 <?php
-include ("../Includes/header.inc.php");
+include ("../Base/header.inc.php");
 ?>
 <br/><br/><br/><h1>Acknowledgements</h1>
 <br/><p><b>Author: </b>Jeremy Spedding</p>
@@ -15,5 +15,5 @@ include ("../Includes/header.inc.php");
 </ul>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <?php
-include ("../Includes/footer.inc.php");
+include "../Base/footer.inc.php";
 ?>
