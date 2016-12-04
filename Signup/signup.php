@@ -1,17 +1,17 @@
 <?php
-include "../Includes/header.inc.php";
+include "../Base/header.inc.php";
 ?>
 
 <br/><br/><br/><br/><br/>
 
 <h2 align="center">SIGN UP</h2>
 
-<form align="center" action="../Includes/../Includes/signupPrc.inc.php" method="POST">				
-	<input type="text" name="firstname" placeholder="Firstname"> <br/>							
-	<input type="text" name="lastname" placeholder="Lastname"> <br/>							
-	<input type="text" name="username" placeholder="Username"> <br/>							
-	<input type="password" name="password" placeholder="Password"> <br/>								
-	<button type="submit">Sign Up</button>						
+<form align="center" action="signupPrc.inc.php" method="POST">
+	<input type="text" name="firstname" placeholder="Firstname"> <br/>
+	<input type="text" name="lastname" placeholder="Lastname"> <br/>
+	<input type="text" name="username" placeholder="Username"> <br/>
+	<input type="password" name="password" placeholder="Password"> <br/>
+	<button type="submit">Sign Up</button>
 </form>
 <!--<p class='uerror' align='center'>Unfortunatly my current webserver isn't up to date so you won't be able to sign up</p>-->
 <?php
@@ -23,5 +23,5 @@ include "../Includes/header.inc.php";
 	}
 ?>
 <?php
-include "../Includes/footer.inc.php";
+include "../Base/footer.inc.php";
 ?>
