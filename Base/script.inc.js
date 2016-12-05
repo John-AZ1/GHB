@@ -45,7 +45,7 @@ function printTime() {
 }
 
 function chgimgjs(to, from) {
-	
+
 	var img = document.getElementById(from);
 	var sub1 = document.getElementById("is1");
 	var sub2 = document.getElementById("not1");
@@ -76,7 +76,7 @@ function chgimgjs(to, from) {
 }
 
 function chgimgpjs(to, from) {
-	
+
 	var img = document.getElementById(from);
 	var sub1 = document.getElementById("is1");
 	var sub2 = document.getElementById("not1");
@@ -130,14 +130,14 @@ function inlarge(name) {
 		var thing = document.getElementById("not2")
 		thing.style.height = "58px";
 		thing.style.width = "68px";
-		thing.parentNode.style.top = "-109px"; 
+		thing.parentNode.style.top = "-109px";
 		thing.style.zIndex = "3";
 	}
 
 }
 
 function deinlarge(name) {
-	
+
 	if (name == "is1") {
 		var thing = document.getElementById("is1");
 		thing.style.height = "60px";
@@ -153,7 +153,7 @@ function deinlarge(name) {
 	} else if (name == "not2") {
 		var thing = document.getElementById("not2")
 		thing.style.height = "50px";
-		thing.style.width = "60px"; 
+		thing.style.width = "60px";
 		thing.parentNode.style.top = "-105px";
 		thing.style.zIndex = "1";
 	}
@@ -161,7 +161,7 @@ function deinlarge(name) {
 }
 
 function gopic(to, from) {
-	
+
 	var img = document.getElementById("chgimg");
 	var sub1 = document.getElementById("is1");
 	var sub2 = document.getElementById("not1");
@@ -191,6 +191,13 @@ function gopic(to, from) {
 		img.alt = " Sorry";
 	}
 }
-
-
-
+function screen_resize() {
+	var styleLink = document.getElementById('pagelayout');
+		if (window.innerWidth <= 900) {
+			styleLink.setAttribute("href", "/GHB/Base/mobile.layout.css");
+		} else if (window.innerWidth <= 1200) {
+			styleLink.setAttribute("href", "/GHB/Base/tablet.layout.css");
+		} else {
+			styleLink.setAttribute("href", "/GHB/Base/computer.layout.css");
+		}
+}

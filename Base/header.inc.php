@@ -6,11 +6,16 @@ $url = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 <html>
 <head>
 <link rel='stylesheet' href= "/GHB/Base/style.inc.css">
+<link id="pagelayout" rel='stylesheet' href= "/GHB/Base/computer.layout.css">
 <link rel='icon' type='image/x-icon' href='favicon.ico'>
 <script src='/GHB/Base/script.inc.js'></script>
+<script>
+window.onresize = screen_resize;
+screen_resize();
+</script>
 <!--meta's-->
 <meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width'/>
+<!--<meta name='viewport' content='width=device-width'/>-->
 <title> GHB </title>
 </head>
 <body>
