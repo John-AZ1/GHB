@@ -4,7 +4,7 @@ header {
 	right:0px;
 	top:0px;
 	height:50px;
-	width:2000000px;
+	width: 100%;
 	background-color: #000000;
 	padding-right: 50px;
 	z-index: 2;
@@ -20,31 +20,38 @@ footer {
 	padding-right: 50px;
 	z-index: 2;
 }
-header nav ul li {
+header nav a {
 	float:right;
 	padding-left:50px;
 	list-style-type:none;
 	font-family: Verdana, arial, sans-serif;
+	right: 80px;
 }
-header nav ul li a:link {
+header nav a:link {
 	color:#ffffff;
 	text-decoration:none;
 }
-header nav ul li a:visited {
+header nav a:visited {
 	color:#ffffff;
 }
-footer nav ul li {
+#srchimg {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	right: 260px;
+	/*padding: 17px 50px;*/
+}
+footer nav  {
 	float:right;
-	padding-left:50px;
-	color:#BC001F;
+	padding: 17px 50px;
 	list-style-type:none;
 }
-footer nav ul li a:link {
+footer nav  a:link {
 	color:#ffffff;
 	text-decoration:none;
 	font-family: Verdana, arial, sans-serif;
 }
-footer nav ul li a:visited {
+footer nav  a:visited {
 	color:#ffffff;
 }
 p.end {
@@ -221,6 +228,12 @@ button.nxtprv {
 iframe {
 	border: solid #000000;
 }
+#search {
+	height: 20px;
+	width: 120px;
+	position: relative;
+	visibility: visible;
+}
 #search button {
 	width: 40px;
 	height: 20px;
@@ -235,6 +248,8 @@ iframe {
 	margin: 0px;
 	padding-left: 5px;
 	color: #000000;
+
+	left: 100px;
 }
 #item1 {
 	height: 240px;
