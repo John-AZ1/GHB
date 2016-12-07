@@ -41,11 +41,15 @@ function printTime() {
 	var hours = d.getHours();
 	var mins = d.getMinutes();
 	var secs = d.getSeconds();
-	document.getElementById("clock").innerHTML = "<p class='time'>"+hours+":"+mins+":"+secs+"</p>";
+	if (secs < 10) {
+		document.getElementById("clock").innerHTML = "<p class='time'>"+hours+":"+mins+":0"+secs+"</p>";
+	} else {
+		document.getElementById("clock").innerHTML = "<p class='time'>"+hours+":"+mins+":"+secs+"</p>";
+	}
 }
 
 function chgimgjs(to, from) {
-	
+
 	var img = document.getElementById(from);
 	var sub1 = document.getElementById("is1");
 	var sub2 = document.getElementById("not1");
@@ -76,7 +80,7 @@ function chgimgjs(to, from) {
 }
 
 function chgimgpjs(to, from) {
-	
+
 	var img = document.getElementById(from);
 	var sub1 = document.getElementById("is1");
 	var sub2 = document.getElementById("not1");
@@ -130,14 +134,14 @@ function inlarge(name) {
 		var thing = document.getElementById("not2")
 		thing.style.height = "58px";
 		thing.style.width = "68px";
-		thing.parentNode.style.top = "-109px"; 
+		thing.parentNode.style.top = "-109px";
 		thing.style.zIndex = "3";
 	}
 
 }
 
 function deinlarge(name) {
-	
+
 	if (name == "is1") {
 		var thing = document.getElementById("is1");
 		thing.style.height = "60px";
@@ -153,7 +157,7 @@ function deinlarge(name) {
 	} else if (name == "not2") {
 		var thing = document.getElementById("not2")
 		thing.style.height = "50px";
-		thing.style.width = "60px"; 
+		thing.style.width = "60px";
 		thing.parentNode.style.top = "-105px";
 		thing.style.zIndex = "1";
 	}
@@ -161,7 +165,7 @@ function deinlarge(name) {
 }
 
 function gopic(to, from) {
-	
+
 	var img = document.getElementById("chgimg");
 	var sub1 = document.getElementById("is1");
 	var sub2 = document.getElementById("not1");
@@ -192,5 +196,6 @@ function gopic(to, from) {
 	}
 }
 
-
-
+function download() {
+	window.location.assign('/GHB/Store/item1/item1.download.php')
+}

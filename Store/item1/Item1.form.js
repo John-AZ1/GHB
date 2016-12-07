@@ -3,6 +3,9 @@ var handler = StripeCheckout.configure({
   key: 'pk_test_2PSNAbLzRy3GtqJyLLZDQWLZ',
   image: '../Base/favicon.ico',
   locale: 'auto',
+  closed: function () {
+    window.location.assign("/GHB/Store/item1/item1.page.php")
+  },
   token: function(token) {
     // You can access the token ID with `token.id`.
     // Get the token ID to your server-side code for use.

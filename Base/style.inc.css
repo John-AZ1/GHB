@@ -244,3 +244,13 @@ iframe {
 	float: center;
 	padding: 10px;
 }
+#item1_D {
+	position: relative;
+	left: 42%;
+	height: 240px;
+	width: 240px;
+	}
+#item1_D.item1img {
+	float: center;
+	padding: 10px;
+}

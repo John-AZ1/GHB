@@ -11,15 +11,14 @@ require_once('config.php');
 
 	<p style="margin-left: 85px"><b>Horse</b></p>
 
-	<img src="item1.img.jpeg" height="200px" width="180px" position="center" class="item1img" style="padding-left: 23px">
+	<img src="item1/item1.img.jpeg" height="200px" width="180px" position="center" class="item1img" style="padding-left: 23px">
 
 	<script src="https://checkout.stripe.com/checkout.js"></script>
 
 	<button id="customButton" style="margin-left: 23px">Purchase</button>
 
-	<script src="Item1.form.js"></script>
+	<script src="item1/Item1.form.js"></script>
 
 </div>
-
 
  <?php include "../Base/footer.inc.php"; ?>
