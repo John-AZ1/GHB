@@ -3,23 +3,20 @@ var handler = StripeCheckout.configure({
   key: 'pk_test_2PSNAbLzRy3GtqJyLLZDQWLZ',
   image: '../Base/favicon.ico',
   locale: 'auto',
-  closed: function () {
-    window.location.assign("/GHB/Store/item1/item1.page.php")
-  },
   token: function(token) {
     // You can access the token ID with `token.id`.
     // Get the token ID to your server-side code for use.
   }
-});
-
+})
 document.getElementById('customButton').addEventListener('click', function(e) {
   // Open Checkout with further options:
   handler.open({
     name: 'GHB',
+    panelLabel: 'Pay {{amount}}',
     description: 'Purchase Horse',
-    zipCode: true,
+    zipCode: false,
     currency: 'aud',
-    amount: 2000
+    amount: 6700
   });
   e.preventDefault();
 });
