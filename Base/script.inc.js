@@ -19,7 +19,17 @@ var box3 = document.getElementById("box3");
 var not1 = document.getElementById("not");
 var is1 = document.getElementById("not");
 var not2 = document.getElementById("not");
-
+var d = new Date();
+var hours = d.getHours();
+var mins = d.getMinutes();
+var secs = d.getSeconds();
+if (hours < 12) {
+	var greeting = "Good Morning";
+} else if (hours > 12) {
+	var greeting = "Good Afternoon";
+} else {
+	var greeting = "Welcome";
+}
 
 // Script
 
@@ -35,14 +45,12 @@ var not2 = document.getElementById("not");
 }
 */
 // Functions
-
 function printTime() {
-	var d = new Date();
-	var hours = d.getHours();
-	var mins = d.getMinutes();
-	var secs = d.getSeconds();
 	document.getElementById("clock").innerHTML = "<p class='time'>"+hours+":"+mins+":"+secs+"</p>";
+	return hours;
 }
+
+
 
 function chgimgjs(to, from) {
 
@@ -194,10 +202,10 @@ function gopic(to, from) {
 function screen_resize() {
 	var styleLink = document.getElementById('pagelayout');
 		if (window.innerWidth <= 900) {
-			styleLink.setAttribute("href", "/GHB/Base/mobile.layout.css");
+			styleLink.setAttribute("href", "mobile.layout.css");
 		} else if (window.innerWidth <= 1200) {
-			styleLink.setAttribute("href", "/GHB/Base/tablet.layout.css");
+			styleLink.setAttribute("href", "tablet.layout.css");
 		} else {
-			styleLink.setAttribute("href", "/GHB/Base/computer.layout.css");
+			styleLink.setAttribute("href", "computer.layout.css");
 		}
 }
