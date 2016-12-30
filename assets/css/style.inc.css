@@ -1,0 +1,261 @@
+
+header {
+	position:fixed;
+	right:0px;
+	top:0px;
+	height:50px;
+	width: 100%;
+	background-color: #000000;
+	padding-right: 50px;
+	z-index: 2;
+
+}
+footer {
+	position:fixed;
+	right:0px;
+	bottom:0px;
+	height:50px;
+	width:100%;
+	background-color: #000000;
+	padding-right: 50px;
+	z-index: 2;
+}
+header nav a {
+	float:right;
+	padding-left:50px;
+	list-style-type:none;
+	font-family: Verdana, arial, sans-serif;
+	right: 80px;
+}
+header nav a:link {
+	color:#ffffff;
+	text-decoration:none;
+}
+header nav a:visited {
+	color:#ffffff;
+}
+#srchimg {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	right: 260px;
+	/*padding: 17px 50px;*/
+}
+footer nav  {
+	float:right;
+	padding: 17px 50px;
+	list-style-type:none;
+}
+footer nav  a:link {
+	color:#ffffff;
+	text-decoration:none;
+	font-family: Verdana, arial, sans-serif;
+}
+footer nav  a:visited {
+	color:#ffffff;
+}
+p.end {
+	font-family: Verdana, arial, sans-serif;
+	font-weight: bold;
+}
+h1 {
+	font-family: Verdana, arial, sans-serif;
+	text-decoration: none;
+}
+h2 {
+	font-family: Verdana, arial, sans-serif;
+}
+form input {
+	padding-left:70px;
+	padding-bottom:5px;
+	padding-top:5px;
+	border:1px solid #000;
+	margin-bottom:5px;
+	width: 130px;
+	height: 19px;
+	font-family: Verdana, arial, sans-serif;
+}
+form button {
+	width: 202px;
+	height: 30px;
+	background-color: #AAAAAA;
+	border: none;
+	font-family: Verdana, arial, sans-serif;
+	font-weight:bold;
+	margin-right: 5px;
+	cursor:pointer;
+}
+p {
+	font-family: Verdana, arial, sans-serif;
+}
+ul.updatehistory {
+	height:250px;
+	width:500px;
+}
+ul.updatehistory li {
+	padding:10px;
+	font-family: Verdana, arial, sans-serif;
+}
+p.welcome {
+	color: #ffffff;
+	font-family: Verdana, arial, sans-serif;
+}
+ul.specialthz {
+	font-family: Verdana, arial, sans-serif;
+	height: 300px;
+	width: 500px;
+	overflow:scroll;
+}
+p.uerror {
+	font-family: Verdana, arial, sans-serif;
+	color:rgb(255,0,0);
+	font-style:italic;
+}
+textarea {
+	width: 500px;
+	height: 100px;
+	background-color: #FFFFFF;
+	resize:none;
+	font-family: Verdana, arial, sans-serif;
+}
+#comments {
+	border: 1px solid #DDDDDD;
+	width:500px;
+	height: 100px;
+	margin-bottom: 35px
+}
+#comments p {
+	margin:0px;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-family: Verdana, arial, sans-serif;
+	font-size: 18px;
+}
+#commuid {
+	font-family: Verdana, arial, sans-serif;
+}
+#commsec {
+	height: 100px;
+	background-color: #A2A2A2;
+}
+#clock {
+	height: 18px;
+}
+p.time {
+	color: #FFFFFF;
+	padding: 0px;
+	margin: 0px;
+}
+#chgimg {
+	height: 108px;
+	width: 192px;
+	margin: 10px;
+}
+button {
+	width: 192px;
+	height: 30px;
+	background-color: #AAAAAA;
+	border: none;
+	font-family: Verdana, arial, sans-serif;
+	font-weight:bold;
+	margin-right: 5px;
+	cursor:pointer;
+}
+#container {
+	width: 200px;
+	height: 50px;
+}
+#container div {
+	position: relative;
+	margin:0px;
+	padding: 0px;
+}
+#box1 {
+	width: 60px;
+	height: 50px;
+	background-color: #FFFFFF;
+	top:5px;
+	left:0px;
+	z-index: 1;
+}
+#box2 {
+	width: 80px;
+	height: 60px;
+	background-color: #FFFFFF;
+	top:-50px;
+	left:60px;
+	z-index: 2;
+}
+#box3 {
+	width: 60px;
+	height: 50px;
+	background-color: #FFFFFF;
+	top:-105px;
+	left:140px;
+	z-index: 1;
+}
+#not1 {
+	width: 60px;
+	height: 50px;
+	background-color: #FFFFFF;
+}
+#not2 {
+	width: 60px;
+	height: 50px;
+	background-color: #FFFFFF;
+}
+#is1 {
+	width: 80px;
+	height: 60px;
+	background-color: #FFFFFF;
+}
+
+h2.pch2 {
+	margin-left: 30px;
+}
+ div.inset {
+	margin:25px;
+	background-color: #FFFFFF;
+	width: 215px;
+	height: 350px;
+}
+button.nxtprv {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 10px;
+	width: 89px;
+}
+iframe {
+	border: solid #000000;
+}
+#search {
+	height: 20px;
+	width: 120px;
+	position: relative;
+	visibility: visible;
+}
+#search button {
+	width: 40px;
+	height: 20px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#search input {
+	border: none;
+	width:150px;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	padding-left: 5px;
+	color: #000000;
+
+	left: 100px;
+}
+#item1 {
+	height: 240px;
+	width: 240px;
+	}
+#item1.item1img {
+	float: center;
+	padding: 10px;
+}
