@@ -13,8 +13,8 @@ if (isset($_SESSION['firstname']) and isset($_SESSION['lastname'])) {
 ?>
 
 
-<iframe src="frame.php" width="265px" height="400px" name="myframe"></iframe>
-
+<iframe src="Frames/frame.php" width="400px" height="420px" name="myframe"></iframe>
+<iframe src="Frames/gregen.html" width="400px" height="420px" name="gregen"></iframe>
 
 
 <script>
