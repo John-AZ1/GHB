@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreGen</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>GreGen</h1>
+    </div>
+    <script>
+      function hi() {
+        location.reload();
+      }
+    </script>
+
+    <input type="textfield" id="qes" onchange="hi()">
+
+    <br>
+
+    <div id="fonttt">
+      <input type="radio" name="type" value="amethystregular" onclick="hi()"> Font 1
+      <input type="radio" name="type" value="antique_quest_stregular" onclick="hi()"> Font 2
+      <input type="radio" name="type" value="cityscape_fontcityscape_font" onclick="hi()"> Font 3
+      <input type="radio" name="type" value="endorregular" onclick="hi()"> Font 4
+    </div>
+
+
+    <br>
+
+    <div id="colorrr">
+      <input type="radio" name="color" value="#000" onclick="hi()"> Black
+      <input type="radio" name="color" value="#29FF32" onclick="hi()"> Green
+      <input type="radio" name="color" value="#3772FF" onclick="hi()"> Blue
+      <input type="radio" name="color" value="#F038FF" onclick="hi()"> Purple
+      <input type="radio" name="color" value="#E15554" onclick="hi()"> Red
+    </div>
+
+    <div id="out" ><p></p></div>
+    <script>
+      var qes1 = document.getElementById('qes').value;
+      var out = document.getElementById('out');
+      var type1 = document.querySelector('input[name="type"]:checked').value;
+      if (type1 === 'cityscape_fontcityscape_font') {
+        var qes = qes1.toUpperCase();
+      } else {
+        var qes = qes1;
+      }
+      var color = document.querySelector('input[name="color"]:checked').value;
+      out.childNodes[0].style.fontFamily = type1;
+      out.childNodes[0].style.color = color;
+      out.childNodes[0].innerHTML = qes;
+      console.log(type1);
+    </script>
+  </div>
+</body>
+</html>
