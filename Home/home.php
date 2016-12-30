@@ -21,30 +21,6 @@ if (isset($_SESSION['firstname']) and isset($_SESSION['lastname'])) {
 <iframe src="#" width="400px" height="420px"></iframe>
 
 <script>
-
-
-/*
-var pos = 0;
-var box = document.getElementById("box");
-var t = setInterval(move, 10);
-
-function move() {
-	if (pos >= 150) {
-		clearInterval(t);
-	}
-	else {
-		pos += 1;
-		box.style.left = pos+"px";
-	}
-	var posr = 150;
-	var u = setInterval(move, 10);
-	if (pos >= 0) {
-		pos -= 1;
-		box.style.left = pos+"px";
-	} else {
-		clearInterval(u);
-	}
-}*/
 </script>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
