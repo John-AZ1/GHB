@@ -13,7 +13,7 @@ $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 <title> GHB </title>
 </head>
 <body>
-	<div id="container">
+	<div id="container1">
 
 			<div id="header">
 				<h1 class="pch2"> PICHANGE </h2>
@@ -24,6 +24,7 @@ $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 			<button id="chgimgnext" onclick="chgimgpjs('img ('+imgx+').'+imgty2, 'chgimg')" class="nxtprv">Prev</button>
 			<button id="chgimgprev" onclick="chgimgjs('img ('+imgy+').'+imgty, 'chgimg')" class="nxtprv">Next</button>
 			<br><br>
+
 			<div id="container2">
 
 	<div id="box1">
