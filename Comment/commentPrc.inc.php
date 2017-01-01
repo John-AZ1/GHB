@@ -26,9 +26,12 @@ function getComments($conn) {
 			echo $row['date']."<br/>";
 		echo "</div>";
 
-
 		echo "<div id='comments'>
 			<p>".nl2br($row['message'])."</p><br/><br/>";
+
+			<form>
+				<button>
+			</form>
 		echo "</div>";
 
 	}
